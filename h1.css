@@ -1,4 +1,65 @@
 body{
     padding: 2;
     background-color: #fafafa;
+    /* background-image: url("bg.jpg"); */
+    background-size: 700px;
+    /* color: #f6f6f6; */
+    /* background-repeat: no-repeat; */
 }
+
+.tomato {
+    background-color: tomato;
+}
+
+#order {
+    background-color: blue;
+}
+
+table {
+    background-color: rgb(209, 216, 209);
+}
+
+body h1{
+    font-family: cursive;
+    padding: 2px;
+}
+
+a{
+    color: red;
+}
+
+a:hover{
+    color: blue;
+}
+
+a:after{
+    color: green;
+}
+a:active{
+    color: rgb(255, 230, 0);
+    
+}
+
+
+
+#t1{
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    caption-side: top;
+    width: 90%;
+    border: "1px";
+    border: dotted;
+}
+
+#t2{
+    margin-bottom: 10px;
+    border-collapse: separate;
+    caption-side: bottom;
+}
+
+
+/* .caption-top{
+
+    caption-side: top;
+
+} */

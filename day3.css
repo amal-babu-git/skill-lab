@@ -1,0 +1,57 @@
+/* body{
+    margin: 2;
+    padding:2px;
+} */
+
+.box-model{
+    margin: 20px;
+    width: 300px;
+    border: 15px solid brown;
+    padding: 30px;
+        
+}
+.box-div{
+    margin: 1px;
+    border: 20px solid greenyellow;
+    background-color: aqua;
+}
+table{
+    border: 2px dotted ;
+    border-collapse: collapse;
+    margin: 2px;
+    padding: 2px;
+    background-color: rgb(146, 190, 228);
+    margin-left: 30px;
+    
+}
+
+thead{
+
+    font-family: 'Times New Roman';
+    padding: 2px;
+    background-color: rgb(8, 48, 83);
+    color: rgb(131, 148, 255);
+
+}
+
+th,td{
+    padding: 20px;
+}
+.price{
+
+    /* background-color:  rgb(247, 233, 129); */
+    
+    /* font-family: cursive; */
+
+}
+.price:hover{
+    background-color:rgb(247, 233, 129);
+    font-weight: bold;
+}
+tr:hover{
+    background-color:rgb(202, 216, 255);
+    font-weight: bolder;
+}
+.active{
+    background-color: rgb(91, 131, 166);
+}
