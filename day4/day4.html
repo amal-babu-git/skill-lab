@@ -11,6 +11,21 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Document</title>
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href=""
+		/>
+
+		<script>
+			const onSubmitHandler = () => {
+				// e.preventDefault();
+				alert("clicked");
+				console.log("clicked");
+
+				//
+			};
+		</script>
 	</head>
 	<body>
 		<div>
@@ -23,6 +38,166 @@
 				pieces of content such as "this is a heading", "this is a paragraph",
 				"this is a link", etc.
 			</blockquote>
+
+			<figure>
+				<blockquote cite="https://www.huxley.net/bnw/four.html">
+					<p>
+						Words can be like X-rays, if you use them properly—they’ll go
+						through anything. You read and you’re pierced.
+					</p>
+				</blockquote>
+				<figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+			</figure>
+
+			<!-- form -->
+			<div class="form-1 card">
+				<button onclick="onSubmitHandler()">hai</button>
+				<form onsubmit="onSubmitHandler()">
+					<div class="form-section">
+						<table>
+							<tr>
+								<th><label for="first-name">First Name</label></th>
+								<td>
+									<input
+										required
+										type="text"
+										name="last-name"
+										placeholder="Enter first name"
+									/>
+								</td>
+							</tr>
+							<br />
+							<tr>
+								<th><label for="first-name">Last Name</label></th>
+								<td>
+									<input
+										required
+										type="text"
+										name="last-name"
+										placeholder="Enter last name"
+									/>
+								</td>
+							</tr>
+
+							<br />
+							<tr>
+								<th><label for="email">Email</label></th>
+								<td>
+									<input
+										required
+										type="email"
+										name="email"
+										placeholder="xyz@abc.com"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<th><label for="phone">Phone</label></th>
+								<td>
+									<input
+										required
+										type="tel"
+										name="phone"
+									/>
+								</td>
+							</tr>
+
+							<br />
+							<tr>
+								<th><label for="password">Password</label></th>
+								<td>
+									<input
+										required
+										type="password"
+										name="last-name"
+									/>
+								</td>
+							</tr>
+
+							<tr>
+								<th><label for="number">Choose a number</label></th>
+								<td>
+									<input
+										required
+										type="number"
+										name="number"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<th><label for="color">Choose a color</label></th>
+								<td>
+									<input
+										required
+										type="color"
+										name="color"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<th><label for="range">Choose a Range</label></th>
+								<td>
+									<input
+										required
+										type="range"
+										name="range"
+										max="10"
+										min="1"
+										step="1"
+									/>
+								</td>
+							</tr>
+
+							<tr>
+								<th><label for="range">Gender</label></th>
+								<td>
+									<label for="gender">Male</label>
+									<input
+										required
+										type="radio"
+										name="gender"
+										value="M"
+									/>
+									<label for="gender">Female</label>
+									<input
+										required
+										type="radio"
+										name="gender"
+										value="F"
+									/>
+									<label for="gender">Other</label>
+									<input
+										required
+										type="radio"
+										name="gender"
+										value="Other"
+									/>
+								</td>
+							</tr>
+
+							<br />
+						</table>
+						<div class="form-section">
+							<input
+								class="btn"
+								type="submit"
+								value="Submit"
+							/>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div>
+				<iframe
+					src="../resume/resume.html"
+					frameborder="1"
+					width="900px"
+					height="600px"
+				>
+				</iframe>
+				<!-- <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe> -->
+			</div>
 		</div>
 	</body>
 </html>

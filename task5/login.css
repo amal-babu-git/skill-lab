@@ -1,0 +1,51 @@
+.login-container{
+position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.child{
+   width: 100%;
+   height: 100%;
+}
+
+.card {
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 10px;
+    background-color: white;
+    /* width: 500px; */
+    /* width: 60% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: rgb(78, 78, 195);
+    color: white;
+    border: none;
+
+}
+
+.submit-button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid blue;
+}
+
+input[type="password"]{
+    margin-bottom: 5px;
+}
+input{
+    margin: 2px;
+    padding: 2px;
+}
+
+
+

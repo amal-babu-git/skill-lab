@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>SIT College</title>
+		<link
+			rel="stylesheet"
+			href="college.css"
+		/>
+		<script>
+			// form on submit handler
+			const onSubmitHandler = (e) => {
+				console.log("Submitted");
+				alert("Submitted successfully");
+				let firstName = document.getElementsByName("first-name").value;
+				let lastName = document.getElementsByName("last-name").value;
+				console.log(firstName, lastName);
+				// let p = (document.getElementById("submitted-data").value =
+				// 	JSON.stringify({ name: firstName }));
+			};
+
+		
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="blue-bg">
+				<h2 id="college-name">Srinivas Institute Of Technology</h2>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Course</a></li>
+
+					<li><a href="#">Academics</a></li>
+					<li><a href="#">Placements</a></li>
+					<li><a href="#">Student login</a></li>
+					<li><a href="#">Staff login</a></li>
+					<li><a href="#">Staff login</a></li>
+					<li><a href="#">Faculties</a></li>
+					<li><a href="#">Library</a></li>
+					<li><a href="#">Alumni</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		
+		<main>
+			<div class="hero">
+				<!-- <button onclick="onSubmitHandler()">c</button> -->
+				<div class="form-1 card">
+					<form onsubmit="onSubmitHandler()">
+						<h2>Enter Student details</h2>
+						<p id="submitted-data"></p>
+						<div class="form-section">
+							<table>
+								<tr>
+									<td><label for="first-name">First Name</label></td>
+									<td>
+										<input
+											required
+											type="text"
+											name="first-name"
+											placeholder="Enter first name"
+										/>
+									</td>
+								</tr>
+								<br />
+								<tr>
+									<td><label for="last-name">Last Name</label></td>
+									<td>
+										<input
+											required
+											type="text"
+											name="last-name"
+											placeholder="Enter last name"
+										/>
+									</td>
+								</tr>
+
+								<br />
+								<tr>
+									<td><label for="email">Email</label></td>
+									<td>
+										<input
+											required
+											type="email"
+											name="email"
+											placeholder="xyz@abc.com"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td><label for="phone">Phone</label></td>
+									<td>
+										<input
+											required
+											type="tel"
+											name="phone"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td><label for="course">Courses</label></td>
+									<td>
+										<select
+											name="course"
+											id="course"
+										>
+											<option
+												value="select course"
+												disabled
+											>
+												Select course
+											</option>
+											<option value="MCA">MCA</option>
+											<option value="MBA">MBA</option>
+											<option value="BTechCS">BTech CS</option>
+											<option value="BTechMech">BTech Mech</option>
+										</select>
+									</td>
+								</tr>
+
+								<br />
+
+								<tr>
+									<td><label for="range">Gender</label></td>
+									<td>
+										<label for="gender">Male</label>
+										<input
+											required
+											type="radio"
+											name="gender"
+											value="M"
+										/>
+										<label for="gender">Female</label>
+										<input
+											required
+											type="radio"
+											name="gender"
+											value="F"
+										/>
+										<label for="gender">Other</label>
+										<input
+											required
+											type="radio"
+											name="gender"
+											value="Other"
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td><label for="range">DOB</label></td>
+									<td>
+										<input
+											type="date"
+											min="1899-01-01"
+											max="2005-01-01"
+										/>
+									</td>
+								</tr>
+
+								<br />
+							</table>
+							<div class="form-section">
+								<input
+									class="btn"
+									type="submit"
+									value="Submit"
+								/>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p style="background-color: rgb(180, 180, 180); padding: 20px">
+				sit@sitmangalore.com
+			</p>
+			<ul sty>
+				<li style="width: 100%; margin-bottom: 0"><a href="#">Home</a></li>
+				<li style="width: 100%; margin-bottom: 0"><a href="#">Course</a></li>
+				<li style="width: 100%; margin-bottom: 0"><a href="#">About</a></li>
+				<li style="width: 100%; margin-bottom: 0">
+					<a href="#">Contact us</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
